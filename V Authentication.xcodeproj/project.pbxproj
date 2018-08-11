@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		18C289CE211C1B60008B7CAE /* V_Authentication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C289CC211C1B60008B7CAE /* V_Authentication.xcdatamodeld */; };
 		18C289D0211C1B61008B7CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C289CF211C1B61008B7CAE /* Assets.xcassets */; };
 		18C289D3211C1B61008B7CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C289D1211C1B61008B7CAE /* LaunchScreen.storyboard */; };
+		18C289DB211C4868008B7CAE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 18C289DA211C4868008B7CAE /* Podfile */; };
+		18C289DD211C4ACD008B7CAE /* BarCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C289DC211C4ACD008B7CAE /* BarCodeScannerViewController.swift */; };
+		18C289E3211C6031008B7CAE /* saveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C289E2211C6031008B7CAE /* saveData.swift */; };
+		18C289E5211C6551008B7CAE /* BarCodeGenaratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C289E4211C6551008B7CAE /* BarCodeGenaratorViewController.swift */; };
+		3343A877446E8934AFC3F617 /* Pods_V_Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A701F428093D70FCDDD774 /* Pods_V_Authentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		18C289CF211C1B61008B7CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C289D2211C1B61008B7CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C289D4211C1B61008B7CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C289DA211C4868008B7CAE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		18C289DC211C4ACD008B7CAE /* BarCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerViewController.swift; sourceTree = "<group>"; };
+		18C289E2211C6031008B7CAE /* saveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveData.swift; sourceTree = "<group>"; };
+		18C289E4211C6551008B7CAE /* BarCodeGenaratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeGenaratorViewController.swift; sourceTree = "<group>"; };
+		2965FC17D462B77217424C9E /* Pods-V Authentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V Authentication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V Authentication/Pods-V Authentication.debug.xcconfig"; sourceTree = "<group>"; };
+		2DF6950EBE1F59FB22DD2377 /* Pods-V Authentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V Authentication.release.xcconfig"; path = "Pods/Target Support Files/Pods-V Authentication/Pods-V Authentication.release.xcconfig"; sourceTree = "<group>"; };
+		45A701F428093D70FCDDD774 /* Pods_V_Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_V_Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3343A877446E8934AFC3F617 /* Pods_V_Authentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +53,11 @@
 		18C289B9211C1B60008B7CAE = {
 			isa = PBXGroup;
 			children = (
+				18C289DA211C4868008B7CAE /* Podfile */,
 				18C289C4211C1B60008B7CAE /* V Authentication */,
 				18C289C3211C1B60008B7CAE /* Products */,
+				4F458AFCD5D233333A013F6E /* Pods */,
+				59AA546B582A90BDE59CCAD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +79,28 @@
 				18C289D1211C1B61008B7CAE /* LaunchScreen.storyboard */,
 				18C289D4211C1B61008B7CAE /* Info.plist */,
 				18C289CC211C1B60008B7CAE /* V_Authentication.xcdatamodeld */,
+				18C289DC211C4ACD008B7CAE /* BarCodeScannerViewController.swift */,
+				18C289E2211C6031008B7CAE /* saveData.swift */,
+				18C289E4211C6551008B7CAE /* BarCodeGenaratorViewController.swift */,
 			);
 			path = "V Authentication";
+			sourceTree = "<group>";
+		};
+		4F458AFCD5D233333A013F6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2965FC17D462B77217424C9E /* Pods-V Authentication.debug.xcconfig */,
+				2DF6950EBE1F59FB22DD2377 /* Pods-V Authentication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59AA546B582A90BDE59CCAD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45A701F428093D70FCDDD774 /* Pods_V_Authentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C289D7211C1B61008B7CAE /* Build configuration list for PBXNativeTarget "V Authentication" */;
 			buildPhases = (
+				CCBB71C2946C8C463EF7A406 /* [CP] Check Pods Manifest.lock */,
 				18C289BE211C1B60008B7CAE /* Sources */,
 				18C289BF211C1B60008B7CAE /* Frameworks */,
 				18C289C0211C1B60008B7CAE /* Resources */,
+				74F153ED42D1F3E0F4675787 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,11 +137,12 @@
 				TargetAttributes = {
 					18C289C1211C1B60008B7CAE = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 18C289BD211C1B60008B7CAE /* Build configuration list for PBXProject "V Authentication" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,11 +166,51 @@
 			files = (
 				18C289D3211C1B61008B7CAE /* LaunchScreen.storyboard in Resources */,
 				18C289D0211C1B61008B7CAE /* Assets.xcassets in Resources */,
+				18C289DB211C4868008B7CAE /* Podfile in Resources */,
 				18C289CB211C1B60008B7CAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74F153ED42D1F3E0F4675787 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-V Authentication/Pods-V Authentication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-V Authentication/Pods-V Authentication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBB71C2946C8C463EF7A406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-V Authentication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18C289BE211C1B60008B7CAE /* Sources */ = {
@@ -139,8 +218,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C289CE211C1B60008B7CAE /* V_Authentication.xcdatamodeld in Sources */,
+				18C289E5211C6551008B7CAE /* BarCodeGenaratorViewController.swift in Sources */,
 				18C289C8211C1B60008B7CAE /* ViewController.swift in Sources */,
+				18C289DD211C4ACD008B7CAE /* BarCodeScannerViewController.swift in Sources */,
 				18C289C6211C1B60008B7CAE /* AppDelegate.swift in Sources */,
+				18C289E3211C6031008B7CAE /* saveData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,23 +356,22 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		18C289D8211C1B61008B7CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2965FC17D462B77217424C9E /* Pods-V Authentication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUREU9E4TX;
 				INFOPLIST_FILE = "V Authentication/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.senovTech.V-Authentication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -300,15 +381,15 @@
 		};
 		18C289D9211C1B61008B7CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF6950EBE1F59FB22DD2377 /* Pods-V Authentication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUREU9E4TX;
 				INFOPLIST_FILE = "V Authentication/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.senovTech.V-Authentication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
